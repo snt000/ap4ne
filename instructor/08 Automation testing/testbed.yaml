@@ -1,0 +1,26 @@
+testbed:
+  name: my_lab
+  credentials:
+    default:
+      username: sntuser
+      password: Ilovenetworks99
+
+devices:
+  nx-osv-1:
+    os: nxos
+    type: switch
+    connections:
+      cli:
+        protocol: ssh
+        ip: 192.168.0.10
+  
+  r11:
+    os: ios
+    type: router
+    platform: 7200
+    connections:
+      cli:
+        protocol: ssh
+        ip: 10.99.99.11
+        port: 22
+

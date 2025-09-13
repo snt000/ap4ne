@@ -1,0 +1,34 @@
+# Nornir Hosts File 
+---
+r1: 
+  hostname: 10.99.99.11 
+  username: sntuser
+  groups: 
+    - iosv
+  data:
+    interfaces: {"lo1": "1.1.1.1", "lo2": "1.1.1.2"}
+  connection_options:
+    napalm:
+      extras:
+        optional_args:
+          secret: cisco
+    scrapli:
+      extras:
+        auth_strict_key: False
+        transport: ssh2
+
+r2: 
+  hostname: 10.99.99.12
+  groups: 
+    - iosv
+
+r3: 
+  hostname: 10.99.99.13
+  groups: 
+    - iosv
+
+r4: 
+  hostname: 10.99.99.14
+  groups: 
+    - ios
+  

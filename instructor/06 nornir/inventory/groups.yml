@@ -1,0 +1,30 @@
+## Nornir Groups File 
+---
+iosv: 
+
+  data: 
+    ntp: 
+      servers: 
+        - 1.1.1.1
+  connection_options:
+    napalm:
+      extras:
+        optional_args:
+          secret: cisco
+    scrapli:
+      extras:
+        auth_strict_key: False
+        transport: ssh2
+
+juniper:
+
+  platform: junos
+  username: sntuser 
+  password: Ilovenetworks99
+
+ios: {}
+
+devnet:
+
+  username: admin
+  password: C1sco12345
