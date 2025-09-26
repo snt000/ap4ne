@@ -3,5 +3,7 @@ A module
 """
 
 def hello ():
-    """ a func """
+    """ a function so
+     vscode shows whats in docstring
+       """
     print ("hello world")

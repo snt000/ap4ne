@@ -1,12 +1,22 @@
+"""
+Find the telemetry subscriptions confgured
+"""
 from ncclient import manager
 import xmltodict
 import xml.dom.minidom
-
+"""
 router = {
    'ip': '10.5.5.5',
    'port': '830',
    'username': 'sntuser',
    'password': 'Ilovenetworks99'
+}
+"""
+router = {
+   'ip': 'devnetsandboxiosxec9k.cisco.com',
+   'port': '830',
+   'username': 'steveg',
+   'password': '7r_uz4_MOD2iW7'
 }
 
 netconf_filter = """
